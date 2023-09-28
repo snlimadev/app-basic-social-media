@@ -1,0 +1,46 @@
+{
+  "packageId": "com.snlimadev.basicsocialmedia",
+  "host": "apex.oracle.com",
+  "name": "Basic - Social Media",
+  "launcherName": "Basic",
+  "display": "standalone",
+  "themeColor": "#800080",
+  "themeColorDark": "#000000",
+  "navigationColor": "#000000",
+  "navigationColorDark": "#000000",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
+  "backgroundColor": "#800080",
+  "enableNotifications": true,
+  "startUrl": "/pls/apex/r/snlimadev/basic-social-media/timeline",
+  "iconUrl": "https://apex.oracle.com/pls/apex/r/snlimadev/274037/files/static/v26/icons/app-icon-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "C:\\Users\\Salomao\\Documents\\Basic - Social Media/android.keystore",
+    "alias": "android"
+  },
+  "appVersionName": "3",
+  "appVersionCode": 3,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://apex.oracle.com/pls/apex/r/snlimadev/basic-social-media/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {
+    "locationDelegation": {
+      "enabled": true
+    }
+  },
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://apex.oracle.com/pls/apex/r/snlimadev/basic-social-media/",
+  "minSdkVersion": 19,
+  "orientation": "any",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "appVersion": "3"
+}

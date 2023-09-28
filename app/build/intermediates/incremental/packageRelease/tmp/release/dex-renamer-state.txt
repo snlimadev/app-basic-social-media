@@ -1,0 +1,4 @@
+#Mon Sep 25 21:59:42 BRT 2023
+base.0=C\:\\Users\\Salomao\\Desktop\\DevMedia\\Carreira Mobile\\React Native\\basic-social-media-app\\app\\build\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

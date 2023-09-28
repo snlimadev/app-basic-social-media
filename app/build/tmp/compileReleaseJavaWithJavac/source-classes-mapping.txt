@@ -1,0 +1,8 @@
+com/snlimadev/basicsocialmedia/Application.java
+ com.snlimadev.basicsocialmedia.Application
+com/snlimadev/basicsocialmedia/DelegationService.java
+ com.snlimadev.basicsocialmedia.DelegationService
+com/snlimadev/basicsocialmedia/BuildConfig.java
+ com.snlimadev.basicsocialmedia.BuildConfig
+com/snlimadev/basicsocialmedia/LauncherActivity.java
+ com.snlimadev.basicsocialmedia.LauncherActivity
