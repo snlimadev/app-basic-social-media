@@ -1,6 +1,6 @@
 <h2>English</h2>
 
-This project was developed with Bubblewrap CLI.
+This project is an Android app generated with Bubblewrap CLI.
 
 The app is a PWA (Progressive Web App) of the website built with Oracle APEX low-code platform: https://apex.oracle.com/pls/apex/r/snlimadev/basic-social-media
 
@@ -10,7 +10,7 @@ Available on the Play Store: https://play.google.com/store/apps/details?id=com.s
 
 <h2>Português</h2>
 
-Este projeto foi desenvolvido utilizando o Bubblewrap CLI.
+Este projeto é um aplicativo para Android gerado com a ferramenta de linha de comando Bubblewrap.
 
 O aplicativo é um PWA (Progressive Web App) do site desenvolvido através da plataforma de low-code Oracle APEX: https://apex.oracle.com/pls/apex/r/snlimadev/basic-social-media
 
