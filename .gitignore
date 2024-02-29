@@ -1,0 +1,7 @@
+app/build
+.gradle
+manifest-checksum.txt
+*.keystore
+*.aab
+*.apk
+*idsig

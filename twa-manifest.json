@@ -13,7 +13,7 @@
   "backgroundColor": "#800080",
   "enableNotifications": true,
   "startUrl": "/pls/apex/r/snlimadev/basic-social-media/timeline",
-  "iconUrl": "https://apex.oracle.com/pls/apex/r/snlimadev/274037/files/static/v26/icons/app-icon-512.png",
+  "iconUrl": "https://apex.oracle.com/pls/apex/r/snlimadev/89606/files/static/v26/icons/app-icon-512.png",
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
     "path": "C:\\Users\\Salomao\\Documents\\Basic - Social Media/android.keystore",
