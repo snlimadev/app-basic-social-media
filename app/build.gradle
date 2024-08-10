@@ -25,7 +25,7 @@ def twaManifest = [
     hostName: 'apex.oracle.com', // The domain being opened in the TWA.
     launchUrl: '/pls/apex/r/snlimadev/basic-social-media/timeline', // The start path for the TWA. Must be relative to the domain.
     name: 'Basic - Social Media', // The application name.
-    launcherName: 'Basic', // The name shown on the Android Launcher.
+    launcherName: 'Basic SM', // The name shown on the Android Launcher.
     themeColor: '#800080', // The color used for the status bar.
     themeColorDark: '#000000', // The color used for the dark status bar.
     navigationColor: '#000000', // The color used for the navigation bar.
@@ -47,17 +47,18 @@ def twaManifest = [
     // 'customtabs' and 'webview'.
     fallbackType: 'customtabs',
     enableSiteSettingsShortcut: 'true',
-    orientation: 'any',
+    orientation: 'natural',
 ]
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 35
+    namespace "com.snlimadev.basicsocialmedia"
     defaultConfig {
         applicationId "com.snlimadev.basicsocialmedia"
         minSdkVersion 19
-        targetSdkVersion 33
-        versionCode 3
-        versionName "3"
+        targetSdkVersion 35
+        versionCode 4
+        versionName "4"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name
