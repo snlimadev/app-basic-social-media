@@ -22,16 +22,16 @@ plugins {
 
 def twaManifest = [
     applicationId: 'com.snlimadev.basicsocialmedia',
-    hostName: 'apex.oracle.com', // The domain being opened in the TWA.
-    launchUrl: '/pls/apex/r/snlimadev/basic-social-media/timeline', // The start path for the TWA. Must be relative to the domain.
+    hostName: 'oracleapex.com', // The domain being opened in the TWA.
+    launchUrl: '/ords/r/snlimadev/basic-social-media/timeline', // The start path for the TWA. Must be relative to the domain.
     name: 'Basic - Social Media', // The application name.
     launcherName: 'Basic SM', // The name shown on the Android Launcher.
     themeColor: '#800080', // The color used for the status bar.
-    themeColorDark: '#000000', // The color used for the dark status bar.
-    navigationColor: '#000000', // The color used for the navigation bar.
-    navigationColorDark: '#000000', // The color used for the dark navbar.
-    navigationDividerColor: '#000000', // The navbar divider color.
-    navigationDividerColorDark: '#000000', // The dark navbar divider color.
+    themeColorDark: '#800080', // The color used for the dark status bar.
+    navigationColor: '#800080', // The color used for the navigation bar.
+    navigationColorDark: '#800080', // The color used for the dark navbar.
+    navigationDividerColor: '#800080', // The navbar divider color.
+    navigationDividerColorDark: '#800080', // The dark navbar divider color.
     backgroundColor: '#800080', // The color used for the splash screen background.
     enableNotifications: true, // Set to true to enable notification delegation.
     // Every shortcut must include the following fields:
@@ -42,7 +42,7 @@ def twaManifest = [
     shortcuts: [],
     // The duration of fade out animation in milliseconds to be played when removing splash screen.
     splashScreenFadeOutDuration: 300,
-    generatorApp: 'bubblewrap-cli', // Application that generated the Android Project
+    generatorApp: 'PWABuilder', // Application that generated the Android Project
     // The fallback strategy for when Trusted Web Activity is not available. Possible values are
     // 'customtabs' and 'webview'.
     fallbackType: 'customtabs',
@@ -51,14 +51,14 @@ def twaManifest = [
 ]
 
 android {
-    compileSdkVersion 35
+    compileSdkVersion 36
     namespace "com.snlimadev.basicsocialmedia"
     defaultConfig {
         applicationId "com.snlimadev.basicsocialmedia"
-        minSdkVersion 19
+        minSdkVersion 23
         targetSdkVersion 35
-        versionCode 4
-        versionName "4"
+        versionCode 5
+        versionName "1.0.4"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name
@@ -71,15 +71,17 @@ android {
         resValue "string", "launchUrl", launchUrl
 
         
+
+        
             // The URL the Web Manifest for the Progressive Web App that the TWA points to. This
             // is used by Chrome OS and Meta Quest to open the Web version of the PWA instead of
             // the TWA, as it will probably give a better user experience for non-mobile devices.
-            resValue "string", "webManifestUrl", 'https://apex.oracle.com/pls/apex/r/snlimadev/basic-social-media/manifest.json'
+            resValue "string", "webManifestUrl", 'https://oracleapex.com/ords/r/snlimadev/basic-social-media/manifest.json?v=24.2.8-15553390137102&lang=en-us'
         
 
         
             // This is used by Meta Quest.
-            resValue "string", "fullScopeUrl", 'https://apex.oracle.com/pls/apex/r/snlimadev/basic-social-media/'
+            resValue "string", "fullScopeUrl", 'https://oracleapex.com/ords/r/snlimadev/basic-social-media/'
         
 
         
@@ -145,6 +147,8 @@ android {
 
         resValue "bool", "enableSiteSettingsShortcut", twaManifest.enableSiteSettingsShortcut
         resValue "string", "orientation", twaManifest.orientation
+
+        
     }
     buildTypes {
         release {
@@ -204,8 +208,8 @@ repositories {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     
-        implementation 'com.google.androidbrowserhelper:locationdelegation:1.1.1'
+        implementation 'com.google.androidbrowserhelper:locationdelegation:1.1.2'
     
-        implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.5.0'
+        implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.6.2'
     
 }
